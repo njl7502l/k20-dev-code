@@ -1,0 +1,3 @@
+[submodule "lib/FlexCAN_T4"]
+	path = lib/FlexCAN_T4
+	url = git@github.com:NJL7502L/FlexCAN_T4.git

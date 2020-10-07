@@ -1,10 +1,21 @@
 #include <Arduino.h>
+#include "../lib/FlexCAN_T4/FlexCAN_T4.h"
 
-void setup() { pinMode(13, OUTPUT); }
+FlexCAN_T4<CAN0, RX_SIZE_256, TX_SIZE_16> Can0;
+CAN_message_t msg;
+
+void setup() {
+  Serial.begin(115200);
+  Can0.begin();
+  Can0.setBaudRate(1000000);
+  msg.id = 20;
+  for (uint8_t i = 0; i < 8; i++) {
+    msg.buf[i] = i;
+  }
+}
 
 void loop() {
-  delay(100);
-  digitalWrite(13, HIGH);
-  delay(100);
-  digitalWrite(13, LOW);
+  Can0.write(msg);
+
+  delay(10);
 }
