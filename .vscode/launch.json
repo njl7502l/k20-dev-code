@@ -13,6 +13,7 @@
             "request": "launch",
             "name": "PIO Debug",
             "executable": "/Users/gakushi/ghq/github.com/NJL7502L/k20-dev-code/.pio/build/teensy31/firmware.elf",
+            "projectEnvName": "teensy31",
             "toolchainBinDir": "/Users/gakushi/.platformio/packages/toolchain-gccarmnoneeabi/bin",
             "svdPath": "/Users/gakushi/.platformio/platforms/teensy/misc/svd/MK20D5.svd",
             "preLaunchTask": {
@@ -26,6 +27,7 @@
             "request": "launch",
             "name": "PIO Debug (skip Pre-Debug)",
             "executable": "/Users/gakushi/ghq/github.com/NJL7502L/k20-dev-code/.pio/build/teensy31/firmware.elf",
+            "projectEnvName": "teensy31",
             "toolchainBinDir": "/Users/gakushi/.platformio/packages/toolchain-gccarmnoneeabi/bin",
             "svdPath": "/Users/gakushi/.platformio/platforms/teensy/misc/svd/MK20D5.svd",
             "internalConsoleOptions": "openOnSessionStart"
